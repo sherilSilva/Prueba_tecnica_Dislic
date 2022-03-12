@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prueba ténica</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Noticias 1</a></li>
+            <li><a href="#">Noticias 2</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="imageBanner">
+        <div class="container">
+            <h3 class="text-center" style="margin-bottom: 20px;"><img src="img/img-banner.png"><i class="material-icons medium hide-on-small-only icon-top" id="icons"></i></h3>
+            <div id="resultssTotal"></div>
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">public</i>
+                    <input type="text" id="searchquery">
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <input type="submit" id="searchbtn" class="btn" value="Buscar">
+                    </div>
+                    <div class="col-12 col-md-offset-6 col-md-2">
+                        <input type="reset" id="searchbtn" class="btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    <div class="container">
+    <div id="loader" style="display: none;">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="newsResults"></div>
+    </div>
+
+    </div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="iconChanger.js"></script>
+<script src="newsapi.js"></script>
+</body>
+</html>
